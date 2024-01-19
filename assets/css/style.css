@@ -2,9 +2,9 @@
 
 :root {
     --a-text-decoration: none;
-    --h1-font-size: 5rem;
+    --h1-font-size: 3.5rem;
     --h2-font-size-medium: 3rem;
-    --h2-font-size-large: 4rem;
+    --h2-font-size-large: 3.25rem;
     --h3-font-size: 2.5rem;
     --p-font-size-large: 2rem;
     --p-font-size-small: 1.6rem;
@@ -13,6 +13,10 @@
 /* END - VARIABLES */
 
 /* BEGIN - GENERAL ELEMENTS AND CLASSES */
+
+body {
+    overflow-x: hidden;
+}
 
 html {
     scroll-behavior: smooth;
@@ -44,6 +48,7 @@ p {
 }
 
 .title {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,6 +61,7 @@ p {
     color: white;
     font-size: var(--h1-font-size);
     font-style: italic;
+
 }
 
 .title h2 {
@@ -77,7 +83,7 @@ p {
 /* BEGIN - HEADER */
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 20vh;
     background: linear-gradient(180deg, hsla(17, 100%, 50%, 1) 0%, hsla(43, 100%, 50%, 1) 100%);
     background: -moz-linear-gradient(180deg, hsla(17, 100%, 50%, 1) 0%, hsla(43, 100%, 50%, 1) 100%);
@@ -88,12 +94,25 @@ header {
 }
 
 header .logo {
-    width: 200px;
-    height: 70px;
+    width: 20rem;
+    height: 7rem;
+}
+
+header .nav-button {
+    display: none;
+    font-size: 5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+header nav {
+    display: flex;
 }
 
 header nav ul {
-    width: 1100px;
+    width: 110rem;
     display: flex;
     justify-content: space-between;
 }
@@ -130,8 +149,8 @@ nav ul li a:hover {
 }
 
 .banner .logo {
-    width: 900px;
-    height: 500px;
+    width: 90rem;
+    height: 50rem;
 }
 
 /* END - MAIN .BANNER */
@@ -155,8 +174,8 @@ nav ul li a:hover {
 }
 
 .live iframe {
-    width: 800px;
-    height: 400px;
+    width: 80rem;
+    height: 40rem;
     border-radius: 2rem;
 }
 
@@ -173,6 +192,8 @@ nav ul li a:hover {
     background: linear-gradient(180deg, hsla(244, 100%, 57%, 1) 0%, hsla(132, 100%, 50%, 1) 100%);
     background: -moz-linear-gradient(180deg, hsla(244, 100%, 57%, 1) 0%, hsla(132, 100%, 50%, 1) 100%);
     background: -webkit-linear-gradient(180deg, hsla(244, 100%, 57%, 1) 0%, hsla(132, 100%, 50%, 1) 100%);
+    padding: 4rem 0;
+    gap: 4rem;
 }
 
 /* BEGIN - MAIN .PROJECT .PROJECT-INFO + .PROJECT-ABOUT*/
@@ -186,7 +207,6 @@ nav ul li a:hover {
 }
 
 .project>section {
-    margin: 2rem 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -290,6 +310,10 @@ nav ul li a:hover {
     width: 50%;
 }
 
+.laboratory .content .text p {
+    line-height: 3rem;
+}
+
 .laboratory .content .icon {
     width: 40%;
     display: flex;
@@ -355,14 +379,14 @@ nav ul li a:hover {
     line-height: 3rem;
 }
 
-.registration .projects,
-.registration .collaborators {
-    width: 50%;
-    height: 40vh;
+.registration>hr {
+    display: none;
 }
 
 .registration .projects,
 .registration .collaborators {
+    width: 50%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -447,6 +471,8 @@ nav ul li a:hover {
     color: hsla(0, 0%, 0%, 0.8);
     font-weight: bold;
     padding: 0 4%;
+    max-height: 8rem;
+    overflow: auto;
 }
 
 /* END - MAIN .PARTNERS */
@@ -480,7 +506,7 @@ main>.schedule .title hr {
 }
 
 .previous-editions hr {
-    width: 100vw;
+    width: 100%;
     border: 0.2rem solid white;
     color: white;
 }
@@ -494,7 +520,7 @@ main>.schedule .title hr {
 }
 
 .previous-editions .title hr {
-    width: 40rem;
+    width: 60%;
 }
 
 /* BEGIN - MAIN .PREVIOUS-EDITIONS .EDITION */
@@ -517,6 +543,10 @@ main>.schedule .title hr {
 
 .edition .about .title {
     width: 50%;
+}
+
+.edition .about .title hr {
+    width: 35rem;
 }
 
 .edition .about .description {
@@ -679,7 +709,7 @@ main>.schedule .title hr {
 }
 
 .edition-2023 .schedule .title hr {
-    width: 80vw;
+    width: 70%;
 }
 
 /* END - MAIN .PREVIOUS-EDITIONS .EDITION-2023 */
@@ -699,7 +729,7 @@ main>.schedule .title hr {
 }
 
 .edition-2022 .schedule .title hr {
-    width: 90vw;
+    width: 87.5%;
 }
 
 /* END - MAIN .PREVIOUS-EDITIONS .EDITION-2022 */
@@ -727,7 +757,7 @@ main>.schedule .title hr {
 }
 
 .edition-2021-2 .schedule .title hr {
-    width: 50vw;
+    width: 45%;
 }
 
 .edition-2021-2 .schedule .gallery {
@@ -772,7 +802,7 @@ main>.schedule .title hr {
 }
 
 .edition-2021-1 .schedule .title hr {
-    width: 50vw;
+    width: 47.5%;
 }
 
 .edition-2021-1 .schedule .gallery {
@@ -800,8 +830,8 @@ main>.schedule .title hr {
     height: 80vh;
 }
 
-.edition-2020 .about .title+.description {
-    height: 60vh;
+.edition-2020 .about .description {
+    height: 70vh;
 }
 
 .edition-2020 .highlights {
@@ -817,7 +847,7 @@ main>.schedule .title hr {
 }
 
 .edition-2020 .schedule .title hr {
-    width: 45vw;
+    width: 42.5%;
 }
 
 .edition-2020 .schedule .gallery {
@@ -864,7 +894,7 @@ main>.schedule .title hr {
 }
 
 .edition-2019-2 .schedule .title hr {
-    width: 35vw;
+    width: 35%;
 }
 
 .edition-2019-2 .schedule .gallery .card {
@@ -905,7 +935,7 @@ main>.schedule .title hr {
 }
 
 .edition-2019-1 .schedule .title hr {
-    width: 40vw;
+    width: 40%;
 }
 
 .edition-2019-1 .schedule .gallery .card {
@@ -945,6 +975,10 @@ main>.schedule .title hr {
     color: #fff;
 }
 
+.edition-2018 .schedule .title hr {
+    width: 27.5%;
+}
+
 .edition-2018 .schedule .gallery .card {
     height: 35rem;
     flex: 0 0 45rem;
@@ -980,6 +1014,10 @@ main>.schedule .title hr {
 .edition-2017 .highlights .info .links a:hover {
     background-color: hsla(245, 100%, 50%, 0.904);
     color: #fff;
+}
+
+.edition-2017 .schedule .title hr {
+    width: 27.5%;
 }
 
 .edition-2017 .schedule .gallery .card {
@@ -1064,6 +1102,7 @@ main>.schedule .title hr {
 /* BEGIN - FOOTER */
 
 footer {
+    width: 100%;
     height: 20vh;
     background: linear-gradient(90deg, hsla(265, 100%, 34%, 1) 0%, hsla(205, 100%, 60%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(265, 100%, 34%, 1) 0%, hsla(205, 100%, 60%, 1) 100%);
@@ -1074,8 +1113,8 @@ footer {
 }
 
 footer .logo {
-    width: 50vw;
-    height: 15vh;
+    width: 50%;
+    height: 10rem;
 }
 
 footer .logo img {
@@ -1103,7 +1142,6 @@ footer .logo img {
     background-color: #0056b3;
 }
 
-/* Mostra o botão quando o usuário rola a página para baixo */
 .show {
     display: inline-block;
 }

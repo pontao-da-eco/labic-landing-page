@@ -1,0 +1,282 @@
+@media screen and (max-width: 1280px) {
+    header {
+        justify-content: space-around;
+        align-items: center;
+        height: 30vh;
+        flex-wrap: wrap;
+    }
+
+    header nav {
+        width: 100%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header nav ul {
+        width: 100%;
+        height: 50rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    header .nav-button {
+        display: block;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        padding: 2rem 0;
+    }
+
+    .live {
+        padding: 4rem 0;
+        gap: 8rem 0;
+        height: 70vh;
+    }
+
+    .live .title {
+        padding: 0 2%;
+    }
+
+    .live iframe {
+        width: 80%;
+        height: 40rem;
+    }
+
+    .project>section {
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        gap: 4rem
+    }
+
+    .project .title {
+        width: 100%;
+    }
+
+    .project .about {
+        width: 100%;
+    }
+
+    .project .motivation {
+        flex-direction: column-reverse;
+    }
+
+    .axes .title {
+        width: 100%;
+    }
+
+    .axes .content {
+        width: 100%;
+    }
+
+    .laboratory {
+        height: auto;
+    }
+
+    .laboratory .content {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
+        padding: 0 2%;
+    }
+
+    .laboratory .content .text {
+        width: 100%;
+    }
+
+    .laboratory .content .icon {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .laboratory .content .icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .registration {
+        height: auto;
+        padding: 4rem 0;
+    }
+
+    .registration .content {
+        flex-direction: column;
+    }
+
+    .registration .content>hr {
+        display: block;
+        width: 100%;
+        border: 0.3rem solid white;
+        border-radius: 2.5rem;
+    }
+
+    .registration .projects,
+    .registration .collaborators {
+        width: 100%;
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .banner .logo {
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .axes .content {
+        width: 100%;
+    }
+
+    .axes .content .item {
+        width: 100%;
+    }
+
+    .partners {
+        height: 80rem;
+    }
+
+    .partners .gallery {
+        gap: 0 10rem;
+    }
+
+    .edition {
+        padding: 4rem 0;
+    }
+
+    .edition .about {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 6rem 0;
+        padding-bottom: 4rem;
+    }
+
+    .edition .about .title {
+        width: 100%;
+    }
+
+    .edition .about .description {
+        gap: 2rem 0;
+        width: 100%;
+        padding: 0 4rem;
+        height: auto;
+    }
+
+    .edition .highlights {
+        flex-direction: column;
+        padding: 4rem 0;
+        gap: 4rem 0;
+        height: auto;
+    }
+
+    .edition .highlights .info {
+        width: 100%;
+        height: auto;
+        gap: 4rem 0;
+    }
+
+    .edition-2021-2 .schedule .gallery,
+    .edition-2021-1 .schedule .gallery,
+    .edition-2020 .schedule .gallery {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .edition .schedule {
+        height: auto;
+        padding-top: 4rem;
+        gap: 4rem 0;
+    }
+
+    .participation {
+        height: auto;
+        padding: 4rem 0;
+        gap: 4rem 0;
+    }
+
+    .participation .info {
+        gap: 4rem 0;
+        flex-direction: column
+    }
+
+    .participation .info .item {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        height: 20rem;
+    }
+
+    footer .logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .banner .logo {
+        width: 40rem;
+        height: 20rem;
+    }
+
+    .partners .gallery {
+        gap: 0 4rem;
+    }
+
+    .partners .gallery .item {
+        flex: 0 0 100%;
+        height: 50rem;
+    }
+
+    .edition .highlights .collective-photo {
+        width: 80%;
+        height: auto;
+    }
+
+    .edition .highlights .info .links a {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .edition .schedule .link a {
+        width: 30rem;
+    }
+
+    .edition .schedule .gallery {
+        padding: 0 2.5rem;
+    }
+
+    .edition .schedule .gallery .card {
+        height: 35rem;
+        flex: 0 0 30rem;
+    }
+
+    .edition-2019-2 .schedule .gallery .card,
+    .edition-2019-1 .schedule .gallery .card,
+    .edition-2018 .schedule .gallery .card {
+        flex: 0 0 25rem;
+        height: 20rem;
+    }
+
+    footer {
+        height: 20vh;
+    }
+
+    footer .logo {
+        width: 100%;
+        height: 7.5rem;
+    }
+}
