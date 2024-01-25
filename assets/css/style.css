@@ -1054,6 +1054,10 @@ main>.schedule .title hr {
     width: 40rem;
 }
 
+.participation .title h2 {
+    padding: 0 5%;
+}
+
 .participation .info {
     width: 100%;
     display: flex;
