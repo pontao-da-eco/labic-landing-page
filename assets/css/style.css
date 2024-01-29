@@ -189,9 +189,9 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: linear-gradient(180deg, hsla(244, 100%, 57%, 1) 0%, hsla(132, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(180deg, hsla(244, 100%, 57%, 1) 0%, hsla(132, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(180deg, hsla(244, 100%, 57%, 1) 0%, hsla(132, 100%, 50%, 1) 100%);
+    background: linear-gradient(180deg, hsl(244, 100%, 68%) 0%, rgb(98, 255, 129) 100%);
+    background: -moz-linear-gradient(180deg, hsl(244, 100%, 68%) 0%, rgb(98, 255, 129) 100%);
+    background: -webkit-linear-gradient(180deg, hsl(244, 100%, 68%) 0%, rgb(98, 255, 129) 100%);
     padding: 4rem 0;
     gap: 4rem;
 }
